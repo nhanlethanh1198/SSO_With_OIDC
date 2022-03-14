@@ -13,4 +13,12 @@ First step to install pipenv
 Then run `pipenv install` to install all dependencies and install all packages
 
 
-## Install
+## Migration
+
+`pipenv run alembic upgrade head`
+
+## To Run this app
+
+`pipenv run uvicorn app.main:app --reload`
+
+
