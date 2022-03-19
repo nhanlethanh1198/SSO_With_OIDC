@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -17,7 +18,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 @app.get('/')
 async def index():
