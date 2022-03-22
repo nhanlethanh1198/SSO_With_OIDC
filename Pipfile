@@ -8,6 +8,12 @@ fastapi = {extras = ["all"], version = "*"}
 alembic = "*"
 fastapi-sso = "*"
 sqlalchemy = "*"
+python-dotenv = "*"
+python-multipart = "*"
+numpy = "*"
+pyjwt = "*"
+requests = "*"
+psycopg2 = "*"
 
 [dev-packages]
 

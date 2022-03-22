@@ -1,7 +1,6 @@
 from fastapi import FastAPI
-
 from fastapi.middleware.cors import CORSMiddleware
-
+from app.routers import r_users
 
 app = FastAPI()
 
@@ -19,8 +18,5 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.get('/')
-async def index():
-    return {
-        "message": "This is a project for Single Sign On using OpenID Connect"
-    }
+
+app.include_router(r_users.router)
