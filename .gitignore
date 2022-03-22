@@ -52,5 +52,5 @@ logs/
 
 .env
 
-.vscode
-.idea
+# .vscode
+# .idea

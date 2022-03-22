@@ -22,8 +22,8 @@ class User(Base):
         return cls.query.filter_by(id=user_id).first()
     
     
-    async def user_login(self, email: str, password: str):
-        return self.query.filter_by(email=email, password=password).first()
+    async def user_login(cls, email: str, password: str):
+        return cls.query.filter_by(email=email, password=password).first()
     
     
     async def check_user_exists(self, email: str):
